@@ -23,12 +23,14 @@ export const DualInlinePackage = ({
   const rs = mm(row_spacing)
   const ds = mm(drill_size)
 
+  const h = (pad_count / 2 - 1) * pp
+
   return (
     <footprint>
       {Array.from({ length: pad_count }).map((_, i) => (
         <platedhole
           x={i % 2 === 0 ? -rs / 2 : rs / 2}
-          y={pp * Math.floor(i / 2)}
+          y={pp * Math.floor(i / 2) - h / 2}
           port_hints={[`${i + 1}`]}
           hole_diameter={ds}
           outer_diameter={pl}

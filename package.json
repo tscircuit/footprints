@@ -3,9 +3,12 @@
   "module": "index.ts",
   "version": "0.0.1",
   "type": "module",
+  "scripts": {
+    "start": "tsci dev"
+  },
   "devDependencies": {
     "@tscircuit/cli": "^0.0.36",
-    "@tscircuit/react-fiber": "^1.0.9",
+    "@tscircuit/react-fiber": "^1.0.10",
     "@types/bun": "latest",
     "@types/react": "^18.2.67"
   },
