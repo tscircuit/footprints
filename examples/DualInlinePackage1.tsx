@@ -3,8 +3,8 @@ import { DualInlinePackage } from "../src/DualInlinePackage"
 export const DualInlinePackage1 = () => (
   <bug
     port_arrangement={{
-      left_size: 4,
-      right_size: 4,
+      left_size: 12,
+      right_size: 12,
     }}
     port_labels={{}}
     footprint={

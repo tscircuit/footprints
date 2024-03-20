@@ -1,7 +1,7 @@
 {
-  "name": "footprints",
-  "module": "index.ts",
-  "version": "0.0.1",
+  "name": "@tscircuit/footprints",
+  "main": "dist/bundle.js",
+  "version": "0.0.3",
   "type": "module",
   "scripts": {
     "start": "tsci dev"

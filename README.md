@@ -1,15 +1,7 @@
-# footprints
+# @tscircuit/footprints
 
-To install dependencies:
+Standard footprints that can be dropped into `<bug footprint={...} />`
 
-```bash
-bun install
-```
-
-To run:
-
-```bash
-bun run index.ts
-```
-
-This project was created using `bun init` in bun v1.0.30. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+| Footprint               | Description               |
+| ----------------------- | ------------------------- |
+| `<DualInlinePackage />` | Dual Inline Package (DIP) |
