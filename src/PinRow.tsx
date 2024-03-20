@@ -27,7 +27,7 @@ export const PinRow = ({
       {Array.from({ length: pad_count }).map((_, i) => (
         <platedhole
           x={0}
-          y={(i % 2 === 0 ? 0 : pp / 2) + pp * i - h / 2}
+          y={(pad_count % 2 === 0 ? pp / 2 : 0) + pp * i - h / 2}
           port_hints={[`${i + 1}`]}
           hole_diameter={ds}
           outer_diameter={pl}
