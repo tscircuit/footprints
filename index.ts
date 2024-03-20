@@ -1,1 +1,1 @@
-console.log("Hello via Bun!");
+export { DualInlinePackage } from "./src/DualInlinePackage"
