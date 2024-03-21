@@ -28,7 +28,15 @@ export const SmallOutline = ({
     <footprint>
       {Array.from({ length: pad_count }).map((_, i) => (
         <smtpad
-          x={i % 2 === 0 ? -rs / 2 : rs / 2}
+          x={
+            row_count === 1
+              ? 0
+              : row_count === 2
+              ? i % 2 === 0
+                ? -rs / 2
+                : rs / 2
+              : 0 // unsupported
+          }
           y={pp * Math.floor(i / 2) - h / 2}
           // port_hints={[`${i + 1}`]}
           shape="rect"
