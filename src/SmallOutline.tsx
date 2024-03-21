@@ -39,3 +39,5 @@ export const SmallOutline = ({
     </footprint>
   )
 }
+
+export const SOIC = SmallOutline
