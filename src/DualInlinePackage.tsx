@@ -1,6 +1,6 @@
 import mm, { mmStr } from "@tscircuit/mm"
 
-export interface DualInlinePackageProps {
+interface DualInlinePackageProps {
   pad_count: number
   pad_pitch?: number | string
   pad_width?: number | string

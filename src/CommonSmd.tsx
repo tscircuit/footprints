@@ -1,9 +1,5 @@
 import mm, { mmStr } from "@tscircuit/mm"
 
-export interface CommonSmdProps {
-  variant: "0402" | "0603" | "0805" | "1206" | "1210" | "2512"
-}
-
 /**
  * TODO we should load in recommended pad layouts for these, this is
  * currently just a quick heuristic

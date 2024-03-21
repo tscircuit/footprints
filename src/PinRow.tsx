@@ -1,6 +1,6 @@
 import mm, { mmStr } from "@tscircuit/mm"
 
-export interface PinRowProps {
+interface PinRowProps {
   pad_count: number
   pad_pitch?: number | string
   pad_width?: number | string

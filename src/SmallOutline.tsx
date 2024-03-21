@@ -1,6 +1,6 @@
 import mm, { mmStr } from "@tscircuit/mm"
 
-export interface SmallOutlineProps {
+interface SmallOutlineProps {
   pad_count: number
   row_count?: number
   pad_pitch?: number | string
