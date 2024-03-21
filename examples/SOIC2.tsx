@@ -1,12 +1,11 @@
 import { SOIC } from "../src/SmallOutline"
 
-export const SOIC1 = () => (
+export const SOIC2 = () => (
   <bug
     port_arrangement={{
-      left_size: 3,
-      right_size: 3,
+      right_size: 6,
     }}
     port_labels={{}}
-    footprint={<SOIC pad_count={6} />}
+    footprint={<SOIC pad_count={6} row_count={1} />}
   />
 )
