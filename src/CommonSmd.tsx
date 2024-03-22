@@ -27,6 +27,7 @@ const generateCommonDualPad =
         <smtpad
           x={-mm(pitch) / 2}
           y={0}
+          port_hints={["1"]}
           shape="rect"
           width={pad_width}
           height={pad_height}
@@ -34,6 +35,7 @@ const generateCommonDualPad =
         <smtpad
           x={mm(pitch) / 2}
           y={0}
+          port_hints={["2"]}
           shape="rect"
           width={pad_width}
           height={pad_height}

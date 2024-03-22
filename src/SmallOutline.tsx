@@ -50,7 +50,7 @@ export const SmallOutline = ({
       {Array.from({ length: pad_count }).map((_, i) => (
         <smtpad
           {...getXY(i)}
-          // port_hints={[`${i + 1}`]}
+          port_hints={[`${i + 1}`]}
           shape="rect"
           width={pw}
           height={pl}
