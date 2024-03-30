@@ -6,6 +6,7 @@ Standard footprints that can be dropped into `<bug footprint={...} />`
 | ------------------------------- | --------------------------- |
 | `<DualInlinePackage />`         | Dual Inline Package (DIP)   |
 | `<PinRow />`                    | Row of spaced pins          |
+| `<Axial />`                     | 2-lead Axial component      |
 | `<SOIC />` / `<SmallOutline />` | Small outline SMD component |
 | `<Smd0402 />`                   | SMD 0402                    |
 | `<Smd0603 />`                   | SMD 0603                    |
