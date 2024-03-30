@@ -1,23 +1,23 @@
 {
   "name": "@tscircuit/footprints",
-  "main": "dist/index.js",
-  "version": "0.0.15",
+  "main": "dist/index.cjs",
+  "version": "0.0.16",
   "type": "module",
   "scripts": {
     "start": "tsci dev",
-    "build": "bun build --target=node ./index.ts --outfile ./dist/index.js"
+    "build": "tsup ./index.ts --sourcemap --dts"
   },
   "devDependencies": {
-    "@tscircuit/cli": "^0.0.36",
-    "@tscircuit/react-fiber": "^1.0.11",
+    "@tscircuit/cli": "^0.0.52",
+    "@tscircuit/react-fiber": "^1.0.21",
     "@types/bun": "latest",
     "@types/react": "^18.2.67",
-    "tsx": "^4.7.1"
+    "esbuild": "^0.20.2",
+    "tsup": "^8.0.2",
+    "tsx": "^4.7.1",
+    "@tscircuit/mm": "^0.0.4"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
-  },
-  "dependencies": {
-    "@tscircuit/mm": "^0.0.4"
   }
 }
