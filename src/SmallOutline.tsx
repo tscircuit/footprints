@@ -29,19 +29,28 @@ export const SmallOutline = ({
       ? (pad_count / 2 - 1) * pp
       : 0
 
+  /**
+   * Get the x and y coordinates of the pad at index i, where i is the top left
+   * corner and we go CCW from there.
+   *
+   * e.g.
+   *
+   *    1    8
+   *    2    7
+   *    3    6
+   *    4    5
+   */
   const getXY = (i: number): { x: number; y: number } => {
-    if (row_count === 1) {
+    if (i < pad_count / 2) {
       return {
-        x: 0,
-        y: pp * (i + 1) - h / 2,
-      }
-    } else if (row_count === 2) {
-      return {
-        x: i % 2 === 0 ? -rs / 2 : rs / 2,
-        y: pp * Math.floor(i / 2) - h / 2,
+        x: -rs / 2,
+        y: pp * i - h / 2,
       }
     } else {
-      throw new Error(`Row count not implemented row_count=${row_count}`)
+      return {
+        x: rs / 2,
+        y: pp * (pad_count - i - 1) - h / 2,
+      }
     }
   }
 
