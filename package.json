@@ -8,14 +8,14 @@
     "build": "tsup ./index.ts --sourcemap --dts"
   },
   "devDependencies": {
-    "@tscircuit/cli": "^0.0.52",
-    "@tscircuit/react-fiber": "^1.0.21",
+    "@tscircuit/cli": "^0.0.82",
+    "@tscircuit/mm": "^0.0.6",
+    "@tscircuit/react-fiber": "^1.0.35",
     "@types/bun": "latest",
     "@types/react": "^18.2.67",
     "esbuild": "^0.20.2",
     "tsup": "^8.0.2",
-    "tsx": "^4.7.1",
-    "@tscircuit/mm": "^0.0.4"
+    "tsx": "^4.7.1"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"

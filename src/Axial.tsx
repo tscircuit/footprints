@@ -1,4 +1,4 @@
-import mm, { mmStr } from "@tscircuit/mm"
+import { mm, mmStr } from "@tscircuit/mm"
 
 interface AxiosProps {
   spread?: string | number
@@ -28,7 +28,7 @@ export const Axial = ({
     <footprint>
       <platedhole
         x={-spx / 2}
-        y={-spy / 2}
+        y={0}
         port_hints={["1", "left"]}
         hole_diameter={hd}
         outer_diameter={od}
@@ -36,7 +36,7 @@ export const Axial = ({
       />
       <platedhole
         x={spx / 2}
-        y={spy / 2}
+        y={0}
         port_hints={["2", "right"]}
         hole_diameter={hd}
         outer_diameter={od}

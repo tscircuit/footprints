@@ -1,4 +1,4 @@
-import mm, { mmStr } from "@tscircuit/mm"
+import { mm, mmStr } from "@tscircuit/mm"
 
 /**
  * TODO we should load in recommended pad layouts for these, this is

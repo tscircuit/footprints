@@ -1,4 +1,4 @@
-import mm, { mmStr } from "@tscircuit/mm"
+import { mm, mmStr } from "@tscircuit/mm"
 
 interface SmallOutlineProps {
   pad_count: number
@@ -44,12 +44,12 @@ export const SmallOutline = ({
     if (i < pad_count / 2) {
       return {
         x: -rs / 2,
-        y: pp * i - h / 2,
+        y: -pp * i + h / 2,
       }
     } else {
       return {
         x: rs / 2,
-        y: pp * (pad_count - i - 1) - h / 2,
+        y: -pp * (pad_count - i - 1) + h / 2,
       }
     }
   }

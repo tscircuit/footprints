@@ -1,4 +1,5 @@
-import mm, { mmStr } from "@tscircuit/mm"
+import { mm, mmStr } from "@tscircuit/mm"
+import { getCcwPosition } from "./utils/get-ccw-position"
 
 interface DualInlinePackageProps {
   pad_count: number
@@ -27,16 +28,25 @@ export const DualInlinePackage = ({
 
   return (
     <footprint>
-      {Array.from({ length: pad_count }).map((_, i) => (
-        <platedhole
-          x={i % 2 === 0 ? -rs / 2 : rs / 2}
-          y={pp * Math.floor(i / 2) - h / 2}
-          port_hints={[`${i + 1}`]}
-          hole_diameter={ds}
-          outer_diameter={pl}
-          inner_diameter={pw}
-        />
-      ))}
+      {Array.from({ length: pad_count }).map((_, i) => {
+        const { x, y } = getCcwPosition(i, {
+          left_side_size: pad_count / 2,
+          right_size_size: pad_count / 2,
+          pitch: pp,
+          space_between_sides: rs,
+        })
+
+        return (
+          <platedhole
+            x={x}
+            y={y}
+            port_hints={[`${i + 1}`]}
+            hole_diameter={ds}
+            outer_diameter={pl}
+            inner_diameter={pw}
+          />
+        )
+      })}
     </footprint>
   )
 }
