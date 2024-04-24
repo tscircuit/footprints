@@ -1,7 +1,7 @@
 {
   "name": "@tscircuit/footprints",
-  "main": "dist/index.cjs",
-  "version": "0.0.16",
+  "main": "./dist/index.cjs",
+  "version": "0.0.20",
   "type": "module",
   "scripts": {
     "start": "tsci dev",
@@ -19,5 +19,11 @@
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
-  }
+  },
+  "types": "./index.ts",
+  "files": [
+    "dist",
+    "index.ts",
+    "lib"
+  ]
 }
