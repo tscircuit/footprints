@@ -1,6 +1,6 @@
 # @tscircuit/footprints
 
-Standard footprints that can be dropped into `<bug footprint={...} />`
+Standard footprints that can be dropped into `<chip footprint={...} />`
 
 | Footprint                       | Description                 |
 | ------------------------------- | --------------------------- |
