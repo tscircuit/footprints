@@ -6,7 +6,7 @@ export const getCcwPosition = (
     centered_around?: { x: number; y: number }
     pitch?: number
     space_between_sides?: number
-  }
+  },
 ) => {
   opts.centered_around ??= { x: 0, y: 0 }
   opts.pitch ??= 1

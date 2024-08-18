@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "start": "tsci dev",
+    "format": "biome format . --write",
     "format:check": "biome format .",
     "build": "tsup ./index.ts --sourcemap --dts"
   },
