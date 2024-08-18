@@ -5,9 +5,12 @@
   "type": "module",
   "scripts": {
     "start": "tsci dev",
+    "format": "biome format . --write",
+    "format:check": "biome format .",
     "build": "tsup ./index.ts --sourcemap --dts"
   },
   "devDependencies": {
+    "@biomejs/biome": "^1.8.3",
     "@tscircuit/cli": "^0.0.82",
     "@tscircuit/mm": "^0.0.6",
     "@tscircuit/react-fiber": "^1.0.35",
@@ -24,6 +27,7 @@
   "files": [
     "dist",
     "index.ts",
-    "lib"
+    "lib",
+    "src"
   ]
 }

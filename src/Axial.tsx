@@ -27,20 +27,20 @@ export const Axial = ({
   return (
     <footprint>
       <platedhole
-        x={-spx / 2}
-        y={0}
-        port_hints={["1", "left"]}
-        hole_diameter={hd}
-        outer_diameter={od}
-        inner_diameter={id}
+        pcbX={-spx / 2}
+        pcbY={0}
+        portHints={["1", "left"]}
+        holeDiameter={hd}
+        outerDiameter={od}
+        shape="circle"
       />
       <platedhole
-        x={spx / 2}
-        y={0}
-        port_hints={["2", "right"]}
-        hole_diameter={hd}
-        outer_diameter={od}
-        inner_diameter={id}
+        pcbX={spx / 2}
+        pcbY={0}
+        portHints={["2", "right"]}
+        holeDiameter={hd}
+        outerDiameter={od}
+        shape="circle"
       />
     </footprint>
   )

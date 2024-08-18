@@ -26,12 +26,13 @@ export const PinRow = ({
     <footprint>
       {Array.from({ length: pad_count }).map((_, i) => (
         <platedhole
-          x={0}
-          y={(pad_count % 2 === 0 ? -pp / 2 : 0) - pp * i + h / 2}
-          port_hints={[`${i + 1}`]}
-          hole_diameter={ds}
-          outer_diameter={pl}
-          inner_diameter={pw}
+          // @ts-ignore
+          key={i}
+          pcbX={0}
+          pcbY={(pad_count % 2 === 0 ? -pp / 2 : 0) - pp * i + h / 2}
+          portHints={[`${i + 1}`]}
+          holeDiameter={ds}
+          outerDiameter={pl}
         />
       ))}
     </footprint>

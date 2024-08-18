@@ -25,17 +25,17 @@ const generateCommonDualPad =
     return (
       <footprint>
         <smtpad
-          x={-mm(pitch) / 2}
-          y={0}
-          port_hints={["1"]}
+          pcbX={-mm(pitch) / 2}
+          pcbY={0}
+          portHints={["1"]}
           shape="rect"
           width={pad_width}
           height={pad_height}
         />
         <smtpad
-          x={mm(pitch) / 2}
-          y={0}
-          port_hints={["2"]}
+          pcbX={mm(pitch) / 2}
+          pcbY={0}
+          portHints={["2"]}
           shape="rect"
           width={pad_width}
           height={pad_height}

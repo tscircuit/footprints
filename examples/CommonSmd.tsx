@@ -5,8 +5,8 @@ export const CommonSmd1 = () => (
     <resistor
       name="0402"
       resistance="10kohm"
-      pcb_x={0}
-      pcb_y={0}
+      pcbX={0}
+      pcbY={0}
       footprint={<Smd0402 />}
     />
     <resistor name="0603" resistance="10kohm" footprint={<Smd0603 />} />

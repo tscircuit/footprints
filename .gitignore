@@ -176,3 +176,4 @@ dist
 
 .tscircuit
 *.__tmp_entrypoint.tsx
+.vscode

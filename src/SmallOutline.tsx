@@ -26,8 +26,8 @@ export const SmallOutline = ({
     row_count === 1
       ? pp * (pad_count - 1) + pl * pp
       : row_count === 2
-      ? (pad_count / 2 - 1) * pp
-      : 0
+        ? (pad_count / 2 - 1) * pp
+        : 0
 
   /**
    * Get the x and y coordinates of the pad at index i, where i is the top left
@@ -58,8 +58,10 @@ export const SmallOutline = ({
     <footprint>
       {Array.from({ length: pad_count }).map((_, i) => (
         <smtpad
+          // @ts-ignore
+          key={i}
           {...getXY(i)}
-          port_hints={[`${i + 1}`]}
+          portHints={[`${i + 1}`]}
           shape="rect"
           width={pw}
           height={pl}

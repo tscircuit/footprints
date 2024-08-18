@@ -35,9 +35,12 @@ export const DualInlinePackage = ({
           pitch: pp,
           space_between_sides: rs,
         })
+        const platedHoleNum = i
 
         return (
           <platedhole
+            // @ts-ignore
+            key={i}
             x={x}
             y={y}
             port_hints={[`${i + 1}`]}
